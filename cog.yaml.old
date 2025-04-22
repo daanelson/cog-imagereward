@@ -1,0 +1,16 @@
+build:
+  gpu: true
+
+  # python version in the form '3.11' or '3.11.4'
+  python_version: "3.11"
+
+  python_packages:
+    - "image-reward"
+    - "timm>=0.6.13"
+    - "transformers>=4.27.4"
+    - "fairscale>=0.4.13"
+    - "huggingface_hub>=0.13.4"
+    - "clip @ git+https://github.com/openai/CLIP.git"
+    - "Pillow"
+
+predict: "predict.py:Predictor"
